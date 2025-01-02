@@ -1,0 +1,245 @@
+body {
+	background-color:#000000;
+    color:#FFFFFF;
+    font-family: "FreeSans";
+}
+
+@font-face {
+    font-family: "FreeSans";
+    src: url("fonts/FreeSans.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header {
+    text-align: center;
+    color: #00FFFF;
+    font-size: 35px;
+}
+
+.pageTitle {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.mainButton {
+    color: black;
+
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+
+.mainButtonIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.titleText {
+    pointer-events: none;
+    width: 300px;
+    color:#00FFFF;
+    text-shadow: black 1px 1px 2px;
+}
+
+.mainBlock {
+    width: 300px;
+    height: 150px;
+    display: none;
+    overflow: hidden;
+}
+
+.mainBlockImage {
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+}
+    
+#badAppleBlock {
+    position: absolute;
+    right: 150px;
+    bottom: 75px;
+}
+
+#badApple {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#badAppleTitle {
+    position: absolute;
+    font-size: 37px;
+    left: 0px;
+    top: 20px;
+}
+
+#leadingEdgeBlock {
+    position: absolute;
+    left: 150px;
+    bottom: 75px;
+}
+
+#leadingEdge {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#leadingEdgeTitle {
+    position: absolute;
+    font-size: 28px;
+    right: 0px;
+    top: 20px;
+}
+
+#programmingBlock {
+    position: absolute;
+    right: 150px;
+    top: 75px;
+}
+
+#programming {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#programmingTitle {
+    position: absolute;
+    font-size: 28px;
+    left: 0px;
+    bottom: 100px;
+}
+
+.footer{
+    background-color: #5b6151;
+    color: #00FFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: relative;
+}
+
+
+.footer-text-center {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-text-left {
+    font-size: 30px;
+    padding-left: 40px;
+    margin-top: 20px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+
+.footer-text-right {
+    font-size: 30px;
+    padding-right:40px;
+    margin-top:20px;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}
+
+.icon-style {
+    color: #FFFFFF;
+    height:40px;
+    margin-left:20px;
+    margin-top: 5px;
+    text-decoration:none;
+}
+
+.image-icon-style {
+    height: 30px;
+    vertical-align:bottom;
+    text-decoration:none;
+}
+
+.icon-style:hover {
+    color: lime;
+    
+}
+
+a.menu:hover {
+    color: lime;
+    font-size: 20px;
+}
+
+.container {
+    display: -webkit-flex; /* Safari */    
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around; /* Safari 6.1+ */    
+    justify-content: space-around;
+    /*    margin-bottom: 100px;*/
+}
+
+.container div {
+  -webkit-flex: 0 0 calc(33.3% - 20px); /* Safari 6.1+ */
+  -ms-flex: 0 0 calc(33.3% - 20px); /* IE 10 */ 
+  flex: 0 0 calc(33.3% - 20px);  
+  /*background: lavender;*/
+  /* outline: 2px solid white; */
+  /* outline-offset: 10px; */
+  box-sizing: border-box;
+  margin: 30px;
+  text-align: center;
+  position: relative;
+  width: 25ch;
+  padding: 1em;
+  background-color: grey;
+  border-radius: 1em;
+  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.overlay {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0007;
+    color: #ddd;
+    opacity: 0;
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.overlay p {
+    margin: auto;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.container div:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
