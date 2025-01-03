@@ -1,7 +1,7 @@
 var applicationsJson = [
     {
         'name': 'test',
-        'url': 'https://www.example.com',
+        'url': 'example.com',
         'image': 'assets/example.png'
     }
 ];
