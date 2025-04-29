@@ -12,7 +12,6 @@ function appendData(data) {
         link.className = "appUrl";
         let img = document.createElement("img");
         img.src = data[i].image;
-        img.width = "50";
         img.height = "50";
         let div = document.createElement("div");
         div.innerHTML = data[i].name;
